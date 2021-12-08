@@ -1,5 +1,5 @@
 # Book
-基于java web（ssm）+Mysql+微信小程序的图书捐赠管理系统设计与实现毕业设计论文
+基于java web ssm（Springboot+SpringMVC+Mybatis）+Mysql+微信小程序的图书捐赠管理系统设计与实现毕业设计论文
 
 使用软件 idea mysql数据库 微信开发者工具 tomcat  Navicatpremium
 
