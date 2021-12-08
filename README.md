@@ -3,6 +3,8 @@
 
 使用软件 idea mysql数据库 微信开发者工具 tomcat  Navicatpremium
 
+该项目源于https://www.bilibili.com/video/BV1aD4y1X77R?p=2进行修改
+
 项目详细使用问题以及项目改动要求请联系qq：5572545
 
 使用教程 idea运行shequ文件 jdbc.properties中username和password改成自己的数据库用户名以及密码
