@@ -1,0 +1,68 @@
+
+page {
+  background-color: #f0f0f0;
+}
+.suggest-section {
+     margin: 50rpx 20rpx;
+}
+.suggest-main {
+    padding: 40rpx;
+    padding-bottom: 0;
+    background-color: white;
+}
+.suggest-main textarea {
+    
+    width: 100%;
+    height: 400rpx;
+    padding-bottom: 40rpx;
+}
+.category {
+    padding:38rpx 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.category label{
+    margin-right: 30rpx;
+}
+
+.suggest-camera-area {
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.camera {
+    width: 136rpx;
+    height: 136rpx;
+    border: 1px dashed #9c9a9b;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9c9a9b;
+    margin: 18rpx 18rpx 18rpx 0;
+}
+.close {
+    position: absolute;
+    left: -20rpx;
+    top: -28rpx;
+    color: #d32;
+    font-size: 44rpx;
+}
+.camera.hide {
+    display: none;
+}
+.camera.show {
+    width: 136rpx;
+    height:136rpx;
+    border:none;
+}
+.camera.add {
+    border: 1px dashed #9c9a9b;
+}
+.suggest-section .submit {
+    width: 600rpx;
+    background-color: #54afc5;
+    color: white;
+    margin: 30rpx auto;
+}

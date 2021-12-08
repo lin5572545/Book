@@ -1,0 +1,51 @@
+/* pages/second_level/notice/notice.wxss */
+page {
+  background-color: #f0f0f0;
+}
+.notice {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    margin:0 0 30rpx 0;
+
+}
+.notice-head {
+  display: flex;
+  margin: 20rpx 0; 
+}
+
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 20rpx ;
+  border-radius: 50%;
+}
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; 
+}
+.userinfo-nickname {
+  font-size: 32rpx;
+}
+.date {
+    font-size: 28rpx;
+    color: #aaa
+}
+.notice-body {
+    height: 400rpx;
+    margin: 0 20rpx 20rpx 20rpx;
+    overflow: hidden;
+    position: relative;
+}
+.notice-body image {
+    width: 100%;  
+}
+.notice-body text {
+    color: white;
+    width: 100%;
+    padding: 20rpx 10rpx;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5)
+}

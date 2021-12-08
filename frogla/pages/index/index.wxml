@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:360rpx">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="main">  
+  <view class="itemButton notice" bindtap='notice'>
+      <text class="iconfont icon-wenzhang-copy"></text>
+      <text>文章</text>
+  </view>
+    <view class="itemButton suggest" bindtap='goods'>
+      <text class="iconfont icon-wenzhangguanli3x"></text>
+      <text>图书</text>
+  </view>
+  <view class="itemButton repairs" bindtap='repairs'>
+      <text class="iconfont icon-yijianfankui1"></text>
+      <text>意见</text>
+  </view>
+  <view class="itemButton" >
+      <text class="iconfont icon-tianjia"></text>
+  </view>
+
+</view>

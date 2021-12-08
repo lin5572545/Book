@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.UserMapper">
+
+   <insert id="insertUser">
+       insert into user(uid,name,gender,buildingNumber,unitNumber,roomNumber,phone_number,pwd,roomId)
+       values
+       (#{uid},#{name},#{gender},#{buildingNumber},#{unitNumber},#{roomNumber},#{phone_number},#{pwd},#{roomId})
+   </insert>
+
+    <select id="findUidByPNumAndPwd" resultType="String">
+        select uid
+        from user
+        where phone_number =#{phone_number} and pwd = #{pwd}
+    </select>
+
+</mapper>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.VoteMapper">
+
+    <!--由于可能传入3张，可能只传入1张，这就导致pic1,pic2字段根本不存在-->
+    <insert id="insertVote">
+        insert into vote
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="uid!=null">
+                uid,
+            </if>
+            <if test="title!=null">
+                title,
+            </if>
+            <if test="text!=null">
+                text,
+            </if>
+            <if test="optionCount!=null">
+                optionCount,
+            </if>
+            <if test="opt0!=null">
+                opt0,
+            </if>
+            <if test="opt1!=null">
+                opt1,
+            </if>
+            <if test="opt2!=null">
+                opt2,
+            </if>
+            <if test="opt3!=null">
+                opt3,
+            </if>
+            <if test="opt4!=null">
+                opt4,
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="uid!=null">
+                #{uid},
+            </if>
+            <if test="title!=null">
+                #{title},
+            </if>
+            <if test="text!=null">
+                #{text},
+            </if>
+            <if test="optionCount!=null">
+                #{optionCount},
+            </if>
+            <if test="opt0!=null">
+                #{opt0},
+            </if>
+            <if test="opt1!=null">
+                #{opt1},
+            </if>
+            <if test="opt2!=null">
+                #{opt2},
+            </if>
+            <if test="opt3!=null">
+                #{opt3},
+            </if>
+            <if test="opt4!=null">
+                #{opt4},
+            </if>
+        </trim>
+    </insert>
+
+
+
+</mapper>

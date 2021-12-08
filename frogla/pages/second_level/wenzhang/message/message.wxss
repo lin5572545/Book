@@ -1,0 +1,29 @@
+/* pages/second_level/notice/message/message.wxss */
+page {
+    display: flex;
+    flex-direction: column;
+}
+.message-title {
+    padding:40rpx;
+    font-size:48rpx;
+    line-height:1.5em;
+ 
+}
+.message-date-author {
+    display: flex;
+    padding-left: 40rpx;
+}
+.message-date,
+.message-author {
+    font-size: 30rpx;
+    color: #aaa;
+    padding-right: 30rpx;
+}
+.message-content {
+    padding: 40rpx;
+    font-size: 40rpx;
+    line-height: 1.8em;
+}
+.message-content image {
+    width: 100%;
+}

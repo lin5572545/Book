@@ -1,0 +1,56 @@
+@import 'style/weui.wxss';
+
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;  
+} 
+
+@font-face {
+  font-family: "iconfont"; /* Project id 2951552 */
+  src: url('//at.alicdn.com/t/font_2951552_5c4mnyfqxzl.woff2?t=1637313644623') format('woff2'),
+       url('//at.alicdn.com/t/font_2951552_5c4mnyfqxzl.woff?t=1637313644623') format('woff'),
+       url('//at.alicdn.com/t/font_2951552_5c4mnyfqxzl.ttf?t=1637313644623') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tushu:before {
+  content: "\e65d";
+}
+
+.icon-yijianfankui1:before {
+  content: "\e60a";
+}
+
+.icon-tianjia:before {
+  content: "\e622";
+}
+
+.icon-zhucedenglu:before {
+  content: "\e734";
+}
+
+.icon-tianjiashoucang:before {
+  content: "\e659";
+}
+
+.icon-wenzhang-copy:before {
+  content: "\e643";
+}
+
+.icon-wenzhangguanli3x:before {
+  content: "\e60b";
+}

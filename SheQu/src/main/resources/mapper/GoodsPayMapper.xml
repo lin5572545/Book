@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.GoodsPayMapper">
+
+    <insert id="insertBuyGoods">
+        insert into goodspay(goods_id,uid)
+        values(#{goods_id},#{uid})
+    </insert>
+
+    <select id="findMyGoods" resultType="com.shequ.pojo.Goods">
+       select g.*
+    from goods g
+    inner join goodspay gp
+    on gp.goods_id = g.goods_id
+    where gp.uid = #{arg0}
+    </select>
+
+    <select id="findAllGoodsPay" resultType="com.shequ.pojo.Goods">
+      select g.goods_id,g.goods_title,g.goods_desc,g.goods_img,g.goods_price,u.name
+    from goods g
+    inner join goodspay gp
+    on gp.goods_id = g.goods_id
+		inner join user u
+		on gp.uid = u.uid
+    </select>
+
+    <select id="findAllGoodsPayByPage" resultType="com.shequ.pojo.Goods">
+      select g.goods_id,g.goods_title,g.goods_desc,g.goods_img,g.goods_price,u.name
+    from goods g
+    inner join goodspay gp
+    on gp.goods_id = g.goods_id
+		inner join user u
+		on gp.uid = u.uid
+		limit #{arg0},#{arg1}
+    </select>
+
+</mapper>

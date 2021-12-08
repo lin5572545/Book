@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.RepairMapper">
+
+    <!--由于可能传入3张，可能只传入1张，这就导致pic1,pic2字段根本不存在-->
+    <insert id="insertRepair">
+        insert into repair
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="uid!=null">
+                uid,
+            </if>
+            <if test="my_content!=null">
+                my_content,
+            </if>
+            <if test="my_area!=null">
+                my_area,
+            </if>
+            <if test="pic0!=null">
+                pic0,
+            </if>
+            <if test="pic1!=null">
+                pic1,
+            </if>
+            <if test="pic2!=null">
+                pic2,
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="uid!=null">
+                #{uid},
+            </if>
+            <if test="my_content!=null">
+                #{my_content},
+            </if>
+            <if test="my_area!=null">
+                #{my_area},
+            </if>
+            <if test="pic0!=null">
+                #{pic0},
+            </if>
+            <if test="pic1!=null">
+                #{pic1},
+            </if>
+            <if test="pic2!=null">
+                #{pic2},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findAllRepair" resultType="com.shequ.pojo.Repair">
+        select r.id,u.name,r.my_content,r.my_area,r.pic0,r.pic1,r.pic2 from repair r
+         inner join user u
+         on u.uid = r.uid
+    </select>
+
+    <select id="findAllRepairByPage" resultType="com.shequ.pojo.Repair">
+         select r.id,u.name,r.my_content,r.my_area,r.pic0,r.pic1,r.pic2 from repair r
+         inner join user u
+         on u.uid = r.uid
+        limit #{arg0},#{arg1}
+    </select>
+
+</mapper>

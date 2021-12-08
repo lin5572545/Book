@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "用户注册/登录",
+  "backgroundColor": "#f6f8f9",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}
+
+

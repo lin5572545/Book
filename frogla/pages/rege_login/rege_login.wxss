@@ -1,0 +1,97 @@
+.fs18{
+  font-size: 18px;
+}
+.fs16{
+  font-size: 16px;
+}
+.fs14{
+  font-size: 14px;
+}
+.fs12{
+  font-size: 12px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+ .shopDetail-box{
+  padding-top: 20px;
+} 
+.tab-left .active {
+  color: #fc5b13;
+  border-bottom: 2px solid #fc5b13;
+}
+ 
+.tab-left {
+  background: #fff;
+  position: fixed;
+  z-index: 22;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #d5d5d5;
+}
+ 
+.tab-left view {
+  width: 30%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.tab-right .right-item {
+  display: none;
+  /* height: 300rpx; */
+  width: 100%;
+  /* border: solid 1px; */
+}
+ 
+.tab-right .right-item.active {
+  display: block;
+}
+ 
+.shopDetail-bottom{
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: #fff;
+}
+page {
+  background-color: #f0f0f0;
+}
+.main {
+     margin-top: 50rpx; 
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+}
+.main .profile-items {
+    width: 100%;
+    margin-left: 30rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+}
+.profile-items.gender label  {
+    margin-right: 30rpx;
+}
+.word {
+    width:200rpx;
+}
+.house-id .building,
+.house-id .unit,
+.house-id .room{
+    padding-right: 30rpx;
+}
+button {
+    width: 600rpx;
+    background-color: #54afc5;
+    color: white;
+    margin: 30rpx auto;
+}

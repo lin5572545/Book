@@ -1,0 +1,18 @@
+<view class="notice-main">
+<block wx:for="{{list}}" wx:key="list">
+    <navigator class="notice" 
+    url='message/message?content={{item.content}}&title={{item.title}}&time={{item.time}}&author={{item.author}}&img={{item.img}}'>
+        <view class="notice-head">
+            <image wx:if="{{item.avatarUrl}}" class="userinfo-avatar" src="{{gl}}/{{item.avatarUrl}}"></image>
+            <view class="userinfo">
+                <text class="userinfo-nickname">{{item.author}}</text>
+                <text class="date">{{item.time}}</text>
+            </view>
+        </view>
+        <view class="notice-body">
+            <text>{{item.title}}</text>
+            <image wx:if="{{item.img}}" src="{{gl}}/{{item.img}}" ></image>  
+        </view>          
+    </navigator>
+</block>
+</view>

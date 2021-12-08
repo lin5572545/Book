@@ -1,0 +1,38 @@
+<scroll-view  scroll-y="true"  class="page-body" >
+  <!--list-->
+  
+
+  <view class="nav_section">
+        <block wx:for="{{list}}">
+            <view class="nav_section_items" >
+                 <view class="section_image" 
+                  data-aid="{{item.id}}">
+                  <image src="{{gl}}/{{item.goods_img}}" mode="aspectFi"></image>
+                  </view>
+                <!--content-->
+                <view class="section_cont" 
+                 data-aid="{{item.id}}">
+                    <view class="section_cont_sub">
+                        <text>{{item.goods_title}}</text>
+                    </view>
+                    <view class="section_cont_price">捐书人简介：{{item.goods_price}}</view>
+                    <view>图书寄语：{{item.goods_desc}}</view>
+                    <view>图书编号：{{item.goods_id}}</view>
+                </view>
+                <!--book-->
+                <view class="section_book" bindtap="bookTap"
+                 data-aid="{{item.goods_id}}">
+                        <text>详情</text>
+                </view>
+            </view>
+        
+        </block>
+</view>
+
+</scroll-view>
+
+
+
+
+
+

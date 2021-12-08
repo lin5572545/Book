@@ -1,0 +1,16 @@
+<form bindsubmit='buyGoods'>
+<view class="ar_coverpath">
+    <image wx:if="{{data.goods_img}}" src="{{gl}}/{{data.goods_img}}" mode="aspectFit"></image>
+</view>
+<view class="ar_cont">
+    <text class="ar_cont_h1">{{data.goods_title}}</text>
+    <text class="ar_cont_price">
+    捐书人简介：{{data.goods_price}}</text>
+    <text>
+    图书寄语：{{data.goods_desc}}
+    </text>
+    <view class="ar_line"></view>
+    <text>捐书时间：{{data.publish_time}}\n </text>
+    <button class="ar_book" bindtap="bookTap" form-type="submit">立即收藏</button>
+</view>
+</form>

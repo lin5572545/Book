@@ -1,0 +1,67 @@
+page {
+  background-color: #f0f0f0;
+}
+.enter {
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  padding: 10rpx 30rpx;
+  margin: 50rpx 0 20rpx 0;
+  background-color: white;
+}
+.avatar{
+  padding-right: 40rpx;
+  display:flex;
+  align-items: center;
+}
+.avatar image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%
+}
+.info {
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+}
+button.complect {
+  width: 180rpx;
+  line-height: 1em;
+  padding: 16rpx;
+  background-color: #54afc5;
+  color: white;
+  font-size: 30rpx;
+  
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0;
+  background-color: white
+}
+.my-items {
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.my-items navigator {
+  width:560rpx
+} 
+.my-items .iconfont {
+  font-size: 36rpx;
+  padding-right: 30rpx;
+  color: #54afc5;
+}
+.my-items .icon-jiantou {
+  color: #54afc5;
+}
+.service {
+  background-color: white;
+}
+.my-suggests,
+.contact-service {
+  border: none;
+}

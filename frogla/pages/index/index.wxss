@@ -1,0 +1,39 @@
+.slide-image {
+  width:100%;
+  height:100%;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-top: 1rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.itemButton {
+  border: 1rpx solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+  height: 375rpx;
+  padding:30rpx;
+}
+.notice,
+.post {
+  border-left:none;
+}
+.suggest,
+.more-and-more {
+  border-right: none;
+}
+.icon-wenzhang-copy{
+  color:#deaf39;
+}
+.icon-yijianfankui1{
+  color: #009e15;
+}
+.icon-wenzhangguanli3x{
+  color: #00adb3;
+}

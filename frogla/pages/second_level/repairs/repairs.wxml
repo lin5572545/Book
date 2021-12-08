@@ -1,0 +1,32 @@
+<!--pages/second_level/repairs/repairs.wxml-->
+<view class="suggest-section">
+  <form bindsubmit="formSubmit">
+    <view class="suggest-main">
+        <textarea placeholder="同学您好，请在下面填写您遇到的问题或意见建议，我们将竭诚为您服务。" style="height:400rpx;" maxlength="1000" name="my_content"/>
+        <view class="category">
+            <radio-group name="my_area">
+                <label><radio color="#54afc5" value="使用问题"/>使用问题</label>
+                <label><radio color="#54afc5" value="意见反馈"/>意见反馈</label>
+            </radio-group>
+        </view>
+        <view class="suggest-camera-area">
+            <view class="camera {{num == 0 ? 'hide':''}}" bindtap="chooseImg">
+              <text class="iconfont icon-tianjia"></text>
+            </view>
+            <block wx:for="{{imageUrl}}">
+              <view class="camera {{num == 0 ? 'show':'hide'}}">    
+                <image data-index="{{index}}" style="width: 140rpx; height: 140rpx; background-color: #eeeeee" src="{{item}} " bindtap="preImage"  mode="aspectFill" name="repair_img"></image>
+                <text data-index="{{index}}" class="close iconfont icon-close" bindtap="removeImage"></text>
+              </view>
+            </block>
+            <view class="camera add {{addNum == 0 ? 'show':'hide'}}" bindtap="chooseImg">
+              <text class="iconfont icon-jia"></text>
+            </view>
+        </view>
+    </view>
+    <button class="submit" form-type="submit" > 
+    提交 
+    </button>
+  </form>
+</view>
+

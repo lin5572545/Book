@@ -1,0 +1,26 @@
+<!--logs.wxml-->
+<view class='enter'>
+  <view class='avatar'>
+    <image src="{{userInfo.avatarUrl}}" />
+  </view>
+  <view class='info'>
+    <view class='name'>{{userInfo.nickName}}</view>
+  </view>
+</view>
+<view class="main">  
+    <view class="my-items my-info">
+      <text class="iconfont icon-zhucedenglu"></text>
+      <navigator url="../rege_login/rege_login"><text class="word">注册/登录</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+</view>
+<view class="service">
+
+  <view class="my-items my-suggests">
+      <text class="iconfont icon-tianjiashoucang"></text>
+      <navigator url="../mygoods/mygoods"><text class="word">我的图书收藏</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+
+</view>
+

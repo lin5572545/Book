@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.GoodsMapper">
+
+    <select id="findAllGoods" resultType="com.shequ.pojo.Goods">
+      select a.name,g.*
+    from goods g
+    inner join admin a
+    on g.publisher_id = a.account
+    </select>
+
+    <select id="findAllGoodsByPages" resultType="com.shequ.pojo.Goods">
+      select a.name,g.*
+    from goods g
+    inner join admin a
+    on g.publisher_id = a.account
+    limit #{arg0},#{arg1}
+    </select>
+
+    <select id="findGoodsById" resultType="com.shequ.pojo.Goods">
+      select g.*,a.name
+    from goods g
+    inner join admin a
+    on a.account = g.publisher_id
+    where g.goods_id = #{arg0}
+    </select>
+
+    <delete id="deleteGoodsById">
+        delete from goods
+        where goods_id = #{arg0}
+    </delete>
+
+    <update id="updateGoodsById">
+        update goods
+        <trim prefix="set" suffixOverrides=",">
+            <if test="goods_title!=null">goods_title=#{goods_title},</if>
+            <if test="goods_desc!=null">goods_desc=#{goods_desc},</if>
+            <if test="goods_img!=null">goods_img=#{goods_img},</if>
+            <if test="goods_price!=null">goods_price=#{goods_price},</if>
+            <if test="publisher_id!=null">publisher_id=#{publisher_id},</if>
+            <if test="publish_time!=null">publish_time=#{publish_time},</if>
+        </trim>
+        where goods_id = #{goods_id}
+    </update>
+
+    <insert id="insertGoods">
+        insert into goods(goods_id,goods_title,goods_desc,goods_img,goods_price,publisher_id,publish_time)
+        values(#{goods_id},#{goods_title},#{goods_desc},#{goods_img},#{goods_price},#{publisher_id},#{publish_time})
+    </insert>
+
+
+
+
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.MessageMapper">
+
+    <select id="findAllMessage" resultType="com.shequ.pojo.Message">
+      select * from message
+    </select>
+
+    <select id="findAllMessageByPage" resultType="com.shequ.pojo.Message">
+      select * from message limit #{arg0},#{arg1}
+    </select>
+
+    <insert id="insertMessage" >
+      insert into message(time,author,content,img,title,avatarUrl)
+      values (#{time},#{author},#{content},#{img},#{title},#{avatarUrl})
+    </insert>
+
+    <delete id="deleteNotices" >
+      delete from message
+      where id = #{arg0}
+    </delete>
+
+    <update id="updateMessage" >
+     update message
+     <trim prefix="set" suffixOverrides=",">
+         <if test="time!=null">time=#{time},</if>
+         <if test="author!=null">author=#{author},</if>
+         <if test="content!=null">content=#{content},</if>
+         <if test="img!=null">img=#{img},</if>
+         <if test="title!=null">title=#{title},</if>
+         <if test="avatarUrl!=null">avatarUrl=#{avatarUrl},</if>
+     </trim>
+        where id = #{id}
+    </update>
+
+</mapper>

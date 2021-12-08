@@ -1,0 +1,16 @@
+POST http://localhost/registerUser
+
+###
+
+GET http://alter
+
+###
+
+GET http://user/toLogin
+
+###
+
+GET http://user/toLogin
+
+###
+
