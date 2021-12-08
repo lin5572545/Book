@@ -9,6 +9,7 @@
 
 使用教程 idea运行shequ文件 jdbc.properties中username和password改成自己的数据库用户名以及密码
 <img width="935" alt="144386118-ca647489-d1a0-4613-bbcd-3aaec32b9f37" src="https://user-images.githubusercontent.com/85597324/145163152-fa5f3f79-720a-447e-9bdb-2861030905d0.png">
+
 Navicatpremium软件 mysql 导入运行sql数据库文件
 
 微信开发者工具 运行frogla文件
@@ -39,6 +40,8 @@ Navicatpremium软件 mysql 导入运行sql数据库文件
 
 
 运行效果简介
+
+
 4.1首页功能
 图书捐赠管理系统小程序系统的主页有三部分组成，即首页，公告，我的。其中首页部分为本系统最主要的部门，提供了文章阅读、意见反馈以及图书查询功能。进入后显示的页面如下图所示。
 ![image](https://user-images.githubusercontent.com/85597324/145163998-cf4743d7-1161-41bb-b4f2-fdc0a761823a.png)
