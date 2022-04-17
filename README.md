@@ -5,7 +5,7 @@
 
 该项目源于https://www.bilibili.com/video/BV1aD4y1X77R?p=2进行修改
 
-项目详细使用问题以及项目改动要求请联系qq：5572545
+登录不了看pom文件有没有报红，数据库配置是否正确。图片文件夹在tomcat配置里自己重新添加
 
 使用教程 idea运行shequ文件 jdbc.properties中username和password改成自己的数据库用户名以及密码
 <img width="935" alt="144386118-ca647489-d1a0-4613-bbcd-3aaec32b9f37" src="https://user-images.githubusercontent.com/85597324/145163152-fa5f3f79-720a-447e-9bdb-2861030905d0.png">
